@@ -20,9 +20,9 @@ Arrays são representados por conchetes: []
 
 TEMPLATE: diz para o computados para o texto não aparecer na tela, no momoento certo, eu Dev, vou usar esse texto.
 
-"<div>" coloca quebra de linha, já "<span>" continua na mesma linha o conteúdo.
+DIV coloca quebra de linha, já SPAN continua na mesma linha o conteúdo.
 
-"cloneNode", clona o nó, que são simplesmente as tags e seus condeúdos.
+CLONENODE, clona o nó, que são simplesmente as tags e seus condeúdos.
 Já as tags dentro de tags são filhos.
 
 indexOf, permite acessa dentro dos arrays:[].
@@ -33,10 +33,10 @@ sinal de igual: = , faz atribuição de valores;
 dois iguais: == , faz comparação de valores sem considerar o tipo/classe que pertencem, ex: numeros e textos, se o valor for igual é o que importa;
 três iguais: === , vai levar em conta se os valores e o tipo/classe são iguais; se os valores forem iguais, mas o tipo não, ele vai colocar como errado.
 
-Onchange permite criar uma função; essa função é relaionada com alguma ação/evento que seja feita na tela.
+ONCHANGE permite criar uma função; essa função é relaionada com alguma ação/evento que seja feita na tela.
 *Por isso em Onchange, tem a palavra "On", que é ligado, porque ele "está atento/ligado", as interações que ocorrem na tela.
 
-"New" serve para criar algo novo, uma estrutura de dados ou obj. específico chamado "Set".
+NEW serve para criar algo novo, uma estrutura de dados ou obj. específico chamado SET.
 *Set armazena uma única informação de algo.
 
 ```css
@@ -77,7 +77,7 @@ body
 
 ````
 
-<p> : coloca um parágrafo.
+P : coloca um parágrafo.
 
 ````css
 
