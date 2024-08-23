@@ -223,3 +223,16 @@ ul li a {
   }
 }
 ```
+
+tags para formulários
+```html
+<label for="titulo"> Titulo do Input </label> <!-- for, é "para", assim, elee referencia o input que a Laber se refere, baseado no ID-->
+    <input type="text" name="titulo" id="titulo">
+
+    <select name="selecao" id="selecao">
+        <option value="filme"> Filme </option>
+        <option value="musica"> Música </option>
+    </select>
+
+    <textarea name="escreva" id="escreva" cols="30" rows="10"></textarea>
+```
