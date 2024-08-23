@@ -110,3 +110,110 @@ A propriedade CSS "flex-direction: row" define que os itens dentro de um contain
      <a href="https://github.com/brezona?tab=repositories" target="_blank"> Ver meu portfólio </a>
 </li> <!--target blanck quer dizer que: "o link deve abrir na mesma página/o outro site deve abrir nessa tela"-->
 ````
+
+
+```css
+body {
+  /*tira todas as medidas de margem e borda pré-definidas pelo computador*/
+  margin: 0;
+  padding: 0;
+}
+
+/*variáveis*/
+:root {
+  --texto: white;
+  --fundo: url(./assets/bg-mobile.jpg);
+  --bordaLI: rgb(255, 255, 255, 0.5);
+  --fundoLI: rgb(255, 255, 255, 0.1);
+  --funfoLI-hover: rgb(255, 255, 255, 0.05);
+  --linkssociaishouver: rgb(255, 255, 255, 0.2);
+  --botão: url(./assets/lua-estrelas.svg);
+}
+.branco {
+  --texto: black;
+  --fundo: url(./assets/bg-mobile-light.jpg);
+  --bordaLI: rgb(0, 0, 0, 0.5);
+  --fundoLI: rgb(0, 0, 0, 0.05);
+  --funfoLI-hover: rgb(0, 0, 0, 0.02);
+  --linkssociaishouver: rgb(0, 0, 0, 0.1);
+  --botão: url(./assets/sol.svg);
+}
+
+body {
+  background: var(--fundo) no-repeat top center/cover;
+  /*esse tipo de propriedade é chamada de "atalho" ou "short-hand"*/
+  /* "var" é variável; veja que em :root e em .branco foram criadas variáveis*/
+  
+  height: 100vh;/*100% da viewport height; vai cobrir 100% da altura da viewport=tela*/
+}
+
+#conteudo {
+  width: 100%; /*o conteúdo vai cobrir a largura máxima da tela, até o lime máximo abaixo, de 588 pixels*/
+  max-width: 588px;
+
+  margin: 56px auto; /*coloca 56px de espaçamento no topo e "auto"maticamente ele faz um calculo e faz as margens laterais na mesma medida/distancia*/
+  padding: 0 24px; /*24 pixels são dos preenchimentos laterais*/
+}
+
+#perfil img {
+  display: block; /*display em inglês é mostrar*/
+  /*faz a img; que é um obj inline(em linha); ser block (quadrado); e por isso, pode ser centralizado com "auto"*/
+}
+
+#botão {
+  position: relative; /*esse position relativisa outros position; como o do botton abaixo; assim o "absolute" de position abaixo, só funcionará dentro da área do width de 66px*/
+  width: 66px;
+}
+
+#botão button {
+  background: white var(--botão) no-repeat /*não repita a imagem*/ center /*posicione ela no centro*/;
+  
+  position: absolute; /*position:absolute, sobrepõem o elemento sobre outros*/
+  z-index: 1; /*com z-index, o elemento é colocado na camada 1*/
+  left: 0; /*coloca o button na posição 0 do lado esquerdo; totalmente no canto do lado esquerdo da área do botão que foi estabelecida acima*/
+
+  /*um truque matemático: o botão não está alinhado a barrinha (span), então top: 50%, obriga ele a ficar esse tanto porcento acima da barra, e com "tranform..." o obrigamos a descer essa quantidade, assim alinhando o botton à barrinha*/
+  top: 50%;
+  transform: translateY(-50%);
+
+  animation: deslizamentoVolta 0.4s; /*a animação do keiframe será de 4 seg.*/
+}
+
+.branco #botão button {
+  animation: deslizamento 0.4s forwards; /*a animação do keiframe será de 4 seg*/ /*forwards diz para o css manter as propriedades, assim o botão não fica voltando*/
+}
+
+#botão button:hover { /*hover é a função que o seu conteúdo só funcina quando passa o mouse por cima do elemento*/
+  outline: 8px solid var(--fundoLI); /*uma borda aparecerá em volta do botão*/
+}
+
+#botão span {
+  display: block; /*span é uma tag inline (linha), por isso é tornada em block para aceitar a altura e largura*/
+
+  backdrop-filter: blur(4px); /*bLur é "embaçar"*/
+  -webkit-backdrop-filter: blur(4px); /*o "-webkit..." serve para ativar/permitir o backdrop-filter em alguns aparelhos*/
+}
+
+ul {
+  list-style: none; /*tira as características da lista, omo pontos e números*/
+  gap: 16px; /*gap é o "espaçamento entre" as listas*/
+}
+
+ul li a {
+  text-decoration: none; /*o "none" tira a decoração do texto*/
+  font-weight: 500; /*a fonte é 500*/
+}
+
+@media (min-width: 700px)
+
+
+@keyframes deslizamento { /*keiframes colocas animações*/
+  /*abaixo vemos animações para o botão, assim ele poderá deslizar suaviamente de uma ponta a outra*/
+  from {
+    left: 0;   
+  }
+  to {
+    left: 52%;
+  }
+}
+```
