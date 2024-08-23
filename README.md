@@ -89,7 +89,7 @@ body
 ````
 
 <ul> = lista desordenada, e <ol> = lista ordenada; <ol> enumera os intens, já <ul> não os enumeras.
-<li> = lista
+<li> = lista. 
 
 QUAL A DIFERENÇA EM USAR "FLEX-DIRECTION:ROW" e "FLEX-DIRECTION:COLUMN"?
 A propriedade CSS "flex-direction: row" define que os itens dentro de um container flex devem ser posicionados em uma linha horizontal, enquanto "flex-direction: column" define que os itens devem ser posicionados em uma coluna vertical.
@@ -98,5 +98,8 @@ A propriedade CSS "flex-direction: row" define que os itens dentro de um contain
 ```` html
 <li> <!-- o hashtag quer dizer que o link não vai para nenhuma página-->
       <a href="#"> Inscrever-se no NLW </a>
- </li>
+</li>
+<li>
+     <a href="https://github.com/brezona?tab=repositories" target="_blank"> Ver meu portfólio </a>
+</li> <!--target blanck quer dizer que: "o link deve abrir na mesma página/o outro site deve abrir nessa tela"-->
 ````
