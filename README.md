@@ -204,8 +204,14 @@ ul li a {
   font-weight: 500; /*a fonte é 500*/
 }
 
-@media (min-width: 700px)
-
+@media (min-width: 700px) { /*quando a largura mínima for de 700px, a variável fundo vai alterar para os novos fundos abaixo*/
+  :root {
+    --fundo: url(./assets/bg-desktop.jpg);
+  }
+  .branco {
+   --fundo: url(./assets/bg-desktop-light.jpg);
+  }
+}
 
 @keyframes deslizamento { /*keiframes colocas animações*/
   /*abaixo vemos animações para o botão, assim ele poderá deslizar suaviamente de uma ponta a outra*/
