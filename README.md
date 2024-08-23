@@ -27,7 +27,7 @@ Já as tags dentro de tags são filhos.
 
 indexOf, permite acessa dentro dos arrays:[].
 
-Clicar em F12, permiTe acessar "A ferramenta do desenvolvedor".
+Clicar em F12, permite acessar "A ferramenta do desenvolvedor".
 
 sinal de igual: = , faz atribuição de valores;
 dois iguais: == , faz comparação de valores sem considerar o tipo/classe que pertencem, ex: numeros e textos, se o valor for igual é o que importa;
