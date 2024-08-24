@@ -226,6 +226,11 @@ ul li a {
 
 tags para formulários
 ```html
+
+<!--form cria formulários, e por meio dele podemos enviar formulários; dentro dele podemos colocar tags como input-->
+<form action="" method="" <!--o método diz se será GET ou POST--> <!--action é para onde será enviado o formulário-->
+</form>
+
 <label for="titulo"> Titulo do Input </label> <!-- for, é "para", assim, elee referencia o input que a Laber se refere, baseado no ID-->
     <input type="text" name="titulo" id="titulo">
 
